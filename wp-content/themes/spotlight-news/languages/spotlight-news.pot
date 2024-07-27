@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-11 11:55+0545\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: header.php:28
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:103
+msgid "Advertisment Image"
+msgstr ""
+
+#: search.php:23
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/customizer.php:16
+msgid "Spotlight News Pro"
+msgstr ""
+
+#: inc/customizer.php:17
+msgid "Buy Pro"
+msgstr ""
+
+#: inc/customizer.php:38 inc/customizer.php:62
+#, php-format
+msgid "Select Post %d"
+msgstr ""
+
+#: inc/ocdi.php:6
+msgid "Demo content files for Spotlight News Theme."
+msgstr ""
+
+#: inc/ocdi.php:8
+msgid "Click here to download demo files."
+msgstr ""
+
+#: inc/sections/banner.php:73
+msgid "Editor's Picks"
+msgstr ""
+
+#: inc/sections/flash-news.php:42
+msgid "Flash News"
+msgstr ""
+
+#: inc/widgets/posts-small-list-widget.php:14
+msgid "Retrive Posts List Widgets"
+msgstr ""
+
+#: inc/widgets/posts-small-list-widget.php:18
+msgid "Ascendoor Posts Small List Widget"
+msgstr ""
+
+#: inc/widgets/posts-small-list-widget.php:124
+msgid "Section Title:"
+msgstr ""
+
+#: inc/widgets/posts-small-list-widget.php:128
+msgid "View All Button:"
+msgstr ""
+
+#: inc/widgets/posts-small-list-widget.php:132
+msgid "View All Button URL:"
+msgstr ""
+
+#: inc/widgets/posts-small-list-widget.php:136
+msgid "Number of posts to show(Min:1 | Max:8):"
+msgstr ""
+
+#: inc/widgets/posts-small-list-widget.php:140
+msgid "Number of posts to displace or pass over:"
+msgstr ""
+
+#: inc/widgets/posts-small-list-widget.php:144
+msgid "Select the category to show posts:"
+msgstr ""

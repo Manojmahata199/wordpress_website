@@ -1,0 +1,12 @@
+li#accordion-section-upsell_section,
+li#customize-control-newspulse_magazine_editor_picks_horizontal_line,
+li#customize-control-newspulse_magazine_banner_advertisement_area,
+li#customize-control-newspulse_magazine_banner_advertisement_link,
+li#customize-control-newspulse_magazine_banner_posts_content_post_1,
+li#customize-control-newspulse_magazine_banner_posts_content_post_2,
+li#customize-control-newspulse_magazine_banner_posts_content_post_3,
+li#customize-control-newspulse_magazine_editor_picks_content_post_1,
+li#customize-control-newspulse_magazine_editor_picks_content_post_2,
+li#customize-control-newspulse_magazine_editor_picks_content_post_3 {
+    display: none !important;
+}

@@ -1,0 +1,45 @@
+/*
+Theme Name: NewsChrome
+Theme URI: https://afthemes.com/products/newschrome/
+Author: AF themes
+Author URI: https://afthemes.com
+Requires PHP: 5.6
+Tested up to: 6.4
+Description: Introducing NewsChrome, the ultimate WordPress newspaper theme designed for effortless website building. With support for Gutenberg and Elementor page builders, you can create stunning news portals without any coding hassle. Choose from a variety of starter sites and templates, with one-click import for instant setup. Customize your site with block patterns, live customizer options, and custom widgets, all while previewing changes in real-time. NewsChrome is not only visually appealing but also SEO-friendly, ensuring your content ranks well in search engines. Plus, seamless integration with WooCommerce allows you to add an online store easily. Benefit from dedicated support as you navigate your website journey. Explore demos and documentation at https://afthemes.com/products/chromenews/newschrome/ and access support at https://afthemes.com/supports/. Elevate your online presence effortlessly with NewsChrome. For step-by-step video tutorials on setting up NewsChrome: https://www.youtube.com/watch?v=ZKkaAktxBE4&list=PL8nUD79gscmj4haIT23WNj49K0i5VPqFA
+Template: chromenews
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: newschrome
+Tags: news, blog, entertainment, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+NewsChrome WordPress Theme, Copyright 2024 AF themes
+NewsChrome is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+
+.chromenews-header.header-layout-side .search-watch div.custom-menu-link>a {
+    background: #0987F5;
+    color: #ffffff;
+}
+
+.exclusive-posts .exclusive-now {
+    background: #EE2224;
+    color: #ffffff;
+}
+
+.af-cat-widget-carousel a.chromenews-categories.category-color-2 {
+    background: #0987F5;
+}
+
+
+.af-cat-widget-carousel a.chromenews-categories.category-color-3 {
+    background: #0987F5;
+}
+
+.af-header-image.data-bg:before {
+    opacity: 0.5;
+}

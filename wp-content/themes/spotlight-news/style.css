@@ -1,0 +1,337 @@
+/**
+Theme Name: Spotlight News
+Theme URI: https://ascendoor.com/themes/spotlight-news/
+Author: Ascendoor
+Author URI: https://ascendoor.com/
+Version: 1.0.0
+Requires PHP: 7.4
+Tested up to: 6.5
+Requires at least: 5.0
+Template: newspulse-magazine
+Text Domain: spotlight-news
+Description: Spotlight News ( child theme of Newspulse Magazine ) theme is a versatile magazine template ideal for news sites, blogs, publishing platforms, and review websites. It offers numerous layouts and can be customized for different industries such as business, finance, healthcare, sports, fashion, and more. Featuring demo content that can be tailored to specific needs, the theme’s homepage showcases a clean, simple magazine-style design. It includes a post banner slider, the latest posts, and a custom widget layout. With its modern and minimalist aesthetic, the theme is user-friendly and easy to set up, especially with the provided pre-built demo. Additionally, the Spotlight News theme is responsive, ensuring optimal viewing across different screen resolutions and browsers. It is compatible with multiple browsers and has been optimized for speed, performance, and search engine optimization (SEO). Demo link: Demo link: https://demos.ascendoor.com/spotlight-news/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: custom-background, custom-logo, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready, theme-options, footer-widgets, full-width-template, left-sidebar, right-sidebar, news, blog
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Spotlight News is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+:root {
+	--primary-color: #e23636;
+}
+
+/*--------------------------------------------------------------
+# Flash News Section
+--------------------------------------------------------------*/
+.flash-news-ticker .flash-news-ticker-wrapper .flash-news-part .mag-post-title-wrap {
+	padding-inline: 15px;
+	position: relative;
+}
+
+.flash-news-ticker .flash-news-ticker-wrapper .flash-news-part .mag-post-title-wrap .flash-img {
+	width: 35px;
+	min-width: 35px;
+	height: 35px;
+	min-height: 35px;
+	overflow: hidden;
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 1;
+	margin-inline-end: 10px;
+	position: relative;
+}
+
+.flash-news-ticker .flash-news-ticker-wrapper .flash-news-part .mag-post-title-wrap .flash-img img {
+	height: 35px;
+	width: 35px;
+	object-fit: cover;
+	margin: 0;
+}
+
+.flash-news-ticker .flash-news-ticker-wrapper .flash-news-part .mag-post-title-wrap a {
+	font-size: calc(var(--font-size-sm) + 2px);
+	padding: 0;
+}
+.flash-news-ticker .flash-news-ticker-wrapper .flash-news-part .mag-post-title-wrap:has(.flash-img) a::before {
+	display: none;
+}
+.flash-news-ticker .flash-news-ticker-wrapper .flash-news-part .mag-post-title-wrap:not(:has(.flash-img)) a {
+	padding-inline-start: 15px;
+}
+.flash-news-ticker .flash-news-ticker-wrapper .flash-news-part .mag-post-title-wrap:not(:has(.flash-img)) a::before {
+	inset-inline-start: -8px;
+}
+
+
+/*--------------------------------------------------------------
+# Banner Section
+--------------------------------------------------------------*/
+.banner-section.style-3 .banner-editor-picks-section {
+	margin-bottom: 20px;
+}
+
+.banner-section.style-3 .banner-editor-picks-section .slick-list {
+	margin: 0 -5px;
+}
+
+.banner-section.style-3 .banner-editor-picks-section .slick-slide {
+	padding-inline: 5px;
+}
+
+.banner-section.style-3 .banner-editor-picks-section .mag-post-single.list-design {
+	gap: 15px;
+}
+
+.banner-section.style-3 .banner-editor-picks-section .mag-post-single.list-design .mag-post-img {
+	inline-size: 108px;
+	aspect-ratio: 1;
+	max-height: 108px;
+	flex-shrink: 0;
+}
+
+.banner-section.style-3 .banner-editor-picks-section .mag-post-single.list-design .mag-post-img a img {
+	aspect-ratio: 1;
+}
+
+.banner-section.style-3 .banner-editor-picks-section .mag-post-single.list-design .mag-post-img .number {
+	content: counter(editor-pick-counter);
+	position: absolute;
+	inset-inline-start: 0;
+	bottom: 0;
+	width: 25px;
+	height: 25px;
+	z-index: 1;
+	color: #fff;
+	display: flex;
+	font-weight: bold;
+	align-items: center;
+	justify-content: center;
+	font-size: var(--font-size-sm);
+	background-color: var(--primary-color);
+}
+
+.banner-section.style-3 .banner-editor-picks-section .mag-post-single.list-design .mag-post-detail .mag-post-title {
+	font-size: var(--font-size-sm);
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	margin-bottom: 5px;
+}
+
+.banner-section.style-3 .banner-section-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.banner-section.style-3 .banner-section-wrapper .banner-posts {
+	width: 100%;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (min-width: 992px) {
+	.banner-section.style-3 .banner-section-wrapper .banner-posts {
+		width: calc(75% - 10px);
+	}
+}
+
+@media (max-width: 767px) {
+	.banner-section.style-3 .banner-section-wrapper .banner-posts {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 600px) {
+	.banner-section.style-3 .banner-section-wrapper .banner-posts {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+}
+
+.banner-section.style-3 .banner-section-wrapper .banner-posts .mag-post-single:nth-child(1) {
+	grid-column: span 2;
+	grid-row: span 2;
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.banner-section.style-3 .banner-section-wrapper .banner-posts .mag-post-single:nth-child(1) {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+}
+
+.banner-section.style-3 .banner-section-wrapper .banner-adver {
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+	display: grid;
+	gap: 20px;
+}
+
+@media (min-width: 992px) {
+	.banner-section.style-3 .banner-section-wrapper .banner-adver {
+		width: calc(25% - 10px);
+		position: sticky;
+		top: 40px;
+		align-self: flex-start;
+	}
+}
+
+.banner-section.style-3 .banner-section-wrapper .banner-adver a {
+	display: block;
+	font-size: 0;
+}
+
+.banner-section.style-3 .banner-section-wrapper .banner-adver a img {
+	width: 100%;
+}
+
+.banner-section.style-3.no-adver-image .banner-section-wrapper .banner-posts {
+	width: 100%;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1024px) {
+	.banner-section.style-3.no-adver-image .banner-section-wrapper .banner-posts {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 767px) {
+	.banner-section.style-3.no-adver-image .banner-section-wrapper .banner-posts {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 600px) {
+	.banner-section.style-3.no-adver-image .banner-section-wrapper .banner-posts {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+}
+
+/*--------------------------------------------------------------
+# Fixed Header CSS
+--------------------------------------------------------------*/
+header.site-header .bottom-header-part-outer.header-fixed {
+	min-height: 56.5px;
+}
+
+header.site-header .bottom-header-part-outer.header-fixed .bottom-header-part.fix-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	box-shadow: var(--shadow);
+}
+
+.admin-bar header.site-header .bottom-header-part-outer.header-fixed .bottom-header-part.fix-header {
+	top: 32px;
+}
+
+@media (max-width: 782px) {
+	.admin-bar header.site-header .bottom-header-part-outer.header-fixed .bottom-header-part.fix-header {
+		top: 46px;
+	}
+}
+
+@media (max-width: 600px) {
+	.admin-bar header.site-header .bottom-header-part-outer.header-fixed .bottom-header-part.fix-header.fix-header {
+		top: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+# Small List widget style 2
+--------------------------------------------------------------*/
+.magazine-small-list-section.style-2 .magazine-list-section-wrapper {
+	gap: 15px;
+}
+
+.magazine-small-list-section.style-2 .magazine-list-section-wrapper .mag-post-single {
+	border: 1px solid rgba(155, 155, 155, 0.3);
+}
+
+.magazine-small-list-section.style-2 .magazine-list-section-wrapper .mag-post-single .mag-post-img {
+	display: none;
+}
+
+.magazine-small-list-section.style-2 .magazine-list-section-wrapper .mag-post-single .mag-post-detail {
+	padding: 20px;
+	border-radius: 5px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+@elseif $breakpoint=="vlarge" {
+	@container (min-width: 1201px) {
+		.magazine-small-list-section.style-2 .magazine-list-section-wrapper .mag-post-single .mag-post-detail .mag-post-title {
+			font-size: var(--font-size-base);
+		}
+	}
+}
+
+@container (min-width: 992px) {
+	.magazine-small-list-section.style-2 .magazine-list-section-wrapper .mag-post-single .mag-post-detail .mag-post-title {
+		font-size: var(--font-size-base);
+	}
+}
+
+/*--------------------------------------------------------------
+# Archive List
+--------------------------------------------------------------*/
+.magazine-archive-layout.list-layout {
+	display: grid;
+	grid-gap: 30px;
+}
+
+.magazine-archive-layout.list-layout article {
+	margin-bottom: 0;
+}
+
+.magazine-archive-layout.list-layout .mag-post-single {
+	display: flex;
+	gap: 20px;
+}
+
+.magazine-archive-layout.list-layout .mag-post-single .mag-post-img {
+	width: 30%;
+}
+
+.magazine-archive-layout.list-layout .mag-post-single .mag-post-detail {
+	padding: 20px;
+	align-self: center;
+}
+
+.magazine-archive-layout.list-layout .mag-post-single .mag-post-img + .mag-post-detail {
+	padding: 20px;
+	padding-inline-start: 0;
+	width: calc(70% - 20px);
+}
+
+@media (max-width: 480px) {
+	.magazine-archive-layout.list-layout .mag-post-single {
+		flex-direction: column;
+		gap: 0;
+	}
+	.magazine-archive-layout.list-layout .mag-post-single .mag-post-img {
+		width: 100%;
+	}
+	.magazine-archive-layout.list-layout .mag-post-single .mag-post-img + .mag-post-detail,
+	.magazine-archive-layout.list-layout .mag-post-single .mag-post-detail {
+		width: 100%;
+		padding: 20px;
+	}
+}
